@@ -1,8 +1,8 @@
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Outlet } from "react-router-dom";
-import React from "react";
 
 function Navbar() {
+	
 	return (
 		<>
 			<div className="flex flex-col flex-grow h-screen bg-blue-100">

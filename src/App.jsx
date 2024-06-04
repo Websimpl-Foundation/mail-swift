@@ -9,6 +9,7 @@ import Layout from "./Layout";
 import Subscriber from "./components/Subscribers/Subscriber";
 import MessageSent from "./components/Messages/Sent";
 import MessageDraft from "./components/Messages/Draft";
+import Templates from "./components/Templates/Templates";
 import { subscriptionTableData, messagesTableData } from "./Data";
 
 const router = createBrowserRouter(
@@ -17,7 +18,9 @@ const router = createBrowserRouter(
 			<Route path="" element={<Navigate to={"/dashboard"} />} />
 			<Route path="/dashboard" element={<div>Dashboard content</div>} />
 			<Route path="/campaigns" element={<div>Campaigns content</div>} />
-			<Route path="/templates" element={<div>Templates content</div>} />
+			<Route 
+				path="/templates"
+				element={<Templates />} />
 			<Route
 				path="/subscribers"
 				element={<Subscriber />}
